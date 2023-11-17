@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 
-//using namespace std;
+using namespace std;
 
 class Neuron;
 
@@ -21,11 +21,19 @@ public:
 private:
     vector<Layer> m_layers; // m_layers[layerNum][neuronNum]
 };
-
+    // defining net consturctor 
     Net::Net(const std::vector<unsigned> topology);{
-        //need to know how many layers of nn
+        //need to know how many layers of nn, will come from topology object
         unsigned numLayers = topology.size(); //.size member to get number of elements
-        for (unsigned layerNum = 0; layerNum)
+        // For loop for iterating by 1 through layers until layer limit reached
+        for (unsigned layerNum = 0; layerNum < num_of_layers; ++layerNum){
+            // want to append a layer object.
+            //create an empty layer and append that to the m_layers container
+            m_layers.push_back(Layer()); // .push_back is a pre-defined function that is used to insert data or elements at the end of the vector or it pushes the element in the vector from the back
+
+            // need an inner loop to add neurons to layers
+            for(unsigned neuronNum = 0; neuronNum <= topology[layerNum];
+        }
     }
 
 
