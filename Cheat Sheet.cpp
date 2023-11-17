@@ -32,7 +32,7 @@
 
     Data member;            //  Variables to be used 
 
-    Member functions;       //  Methodsa to access data members 
+    Member functions;       //  Functions or Methods to access data members 
 
   };    //Class name ends with a semicolon
 
@@ -41,8 +41,11 @@
 
  // public: can be accessed anywhere in the program 
  // private: can be accessed only by functions inside the class
+ // protected: like private but subclasses can also access
 
- //
+ // constructor:  1. has same name as clas. 
+                  2. can be defined inside or outside class. 
+                  3. compiles everytime an object fo class is instantiated
 
 
 
